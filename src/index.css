@@ -1,0 +1,10 @@
+
+/* index.css limpio: solo estilos esenciales para layout */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: system-ui, Arial, sans-serif;
+  background: #fff;
+  color: #37465a;
+}
