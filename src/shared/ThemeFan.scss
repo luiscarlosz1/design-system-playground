@@ -1,0 +1,114 @@
+.theme-fan {
+  position: relative;
+  height: 60px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+
+  &__palette {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__color {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform-origin: 16px -8px;
+    width: 28px;
+    height: 55px;
+    border-radius: 0 0 14px 14px;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.1) 40%,
+        transparent 60%,
+        rgba(0, 0, 0, 0.1) 100%
+      );
+      border-radius: 0 0 14px 14px;
+      pointer-events: none;
+    }
+
+    /* Rotation Logic */
+    &:nth-child(1) { transform: translateX(-50%) rotate(-40deg); z-index: 1; }
+    &:nth-child(2) { transform: translateX(-50%) rotate(-20deg); z-index: 2; }
+    &:nth-child(3) { transform: translateX(-50%) rotate(0deg); z-index: 3; }
+    &:nth-child(4) { transform: translateX(-50%) rotate(20deg); z-index: 2; }
+    &:nth-child(5) { transform: translateX(-50%) rotate(40deg); z-index: 1; }
+
+    /* Hover States - Expand Fan */
+    &:hover {
+      z-index: 10;
+      filter: brightness(1.1);
+    }
+  }
+
+  &:hover {
+    .theme-fan__color {
+      &:nth-child(1) { transform: translateX(-50%) rotate(-60deg) scale(1.1); }
+      &:nth-child(2) { transform: translateX(-50%) rotate(-30deg) scale(1.1); }
+      &:nth-child(3) { transform: translateX(-50%) rotate(0deg) scale(1.1); }
+      &:nth-child(4) { transform: translateX(-50%) rotate(30deg) scale(1.1); }
+      &:nth-child(5) { transform: translateX(-50%) rotate(60deg) scale(1.1); }
+    }
+  }
+
+  &__color--active {
+    outline: 2px solid white;
+    outline-offset: 2px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
+    z-index: 5 !important;
+  }
+
+  &__rivet {
+    position: absolute;
+    left: 50%;
+    top: -4px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle at 35% 35%, #f0f4f8, #b0bec5 60%, #78909c);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    
+    &-inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      background: radial-gradient(circle at 30% 30%, #90a4ae, #607d8b 50%, #455a64);
+      border-radius: 50%;
+
+      &::after, &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1px;
+        height: 6px;
+        background: rgba(0, 0, 0, 0.4);
+      }
+      &::before { transform: translate(-50%, -50%) rotate(90deg); }
+    }
+  }
+}
