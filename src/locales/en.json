@@ -75,7 +75,13 @@
         "ui_accordion": "UI Accordion",
         "ui_popup": "UI Popup",
         "ui_side_panel": "UI Side Panel",
-        "ui_notification": "UI Notification"
+        "ui_notification": "UI Notification",
+        "typography_tokens": "Typography Tokens",
+        "color_tokens": "Color & Theme Tokens",
+        "layout_tokens": "Layout & Surface Tokens",
+        "form_tokens": "Form Control Tokens",
+        "button_tokens": "Button & Size Tokens",
+        "table_tokens": "Table Tokens"
     },
     "tokens": {
         "title": "Design Tokens",
@@ -87,7 +93,10 @@
             "description": "Description"
         },
         "groups": {
-            "general": "General",
+            "typography": "Typography",
+            "layout": "Layout",
+            "icons": "Icons",
+            "status": "Status",
             "forms": "Forms",
             "themes": "Themes",
             "buttons": "Buttons",
