@@ -1,0 +1,378 @@
+{
+    "common": {
+        "search": "Buscar...",
+        "category": "Categoría",
+        "all_categories": "Todas las categorías",
+        "showing": "Mostrando",
+        "of": "de",
+        "tokens": "tokens",
+        "in": "en",
+        "group": "el grupo",
+        "language": "Idioma",
+        "no_results": "No se encontraron resultados",
+        "select_component": "Selecciona un componente"
+    },
+    "props": {
+        "common": {
+            "label": "Etiqueta de texto que se muestra encima o al lado del componente",
+            "disabled": "Deshabilita la interacción y aplica el estilo deshabilitado",
+            "readonly": "Evita la edición mientras mantiene el valor visible y enfocable",
+            "required": "Marca el campo como obligatorio para la validación",
+            "placeholder": "Texto de marcador de posición que se muestra cuando el campo no tiene valor",
+            "hint": "Texto de ayuda que se muestra debajo del componente",
+            "emptyMessage": "Texto mostrado cuando no hay opciones o resultados disponibles",
+            "disableFloatingLabel": "Habilita el comportamiento de etiqueta flotante cuando está enfocado o lleno",
+            "dropdownMaxItemsVisible": "Número máximo de opciones visibles antes de habilitar el desplazamiento",
+            "maxLength": "Número máximo de caracteres permitidos",
+            "minLength": "Número mínimo de caracteres requeridos",
+            "color": "Variante de color visual que define el énfasis del tema",
+            "size": "Tamaño predefinido que controla las dimensiones y la tipografía",
+            "stickyHeader": "Hace que el encabezado de la tabla sea fijo al desplazarse verticalmente",
+            "currentPage": "El número de página actualmente activa",
+            "pageSize": "El número de elementos a mostrar por página",
+            "position": "Controla la ubicación visual del componente en la pantalla",
+            "options": "Fuente de datos para opciones o elementos seleccionables",
+            "optionKeys": "Configuración de mapeo para campos de objeto de opción (value, text, id)",
+            "validators": "Funciones de validación personalizadas para lógica específica",
+            "validationMessages": "Mensajes de error personalizados para diferentes estados de validez",
+            "columnsToShow": "Claves que definen qué campos de cada opción se deben mostrar",
+            "columnHeaders": "Encabezados para las columnas mostradas",
+            "templates": "Plantillas personalizadas para renderizado de celdas, encabezados o filas",
+            "sort": "Configuración para el estado de ordenación actual",
+            "stickyColumns": "Número de columnas que se mantienen fijas durante el desplazamiento horizontal"
+        }
+    },
+    "header": {
+        "title": "Componentes UI del Sistema de Diseño"
+    },
+    "menu": {
+        "documentation": "Documentation",
+        "form_controls": "Controles de Formulario",
+        "buttons": "Botones",
+        "data_display": "Visualización de Datos",
+        "navigation": "Navegación",
+        "panels_accordions": "Paneles y Acordeones",
+        "overlays": "Superposiciones",
+        "tokens": "Tokens",
+        "ui_input": "UI Input",
+        "ui_autocomplete": "UI Autocomplete",
+        "ui_select": "UI Select",
+        "ui_datepicker": "UI Datepicker",
+        "ui_textarea": "UI Textarea",
+        "ui_checkbox": "UI Checkbox",
+        "ui_radiobutton": "UI Radiobutton",
+        "ui_button": "UI Button",
+        "ui_button_icon": "UI Button Icon",
+        "ui_button_dropdown": "UI Button Dropdown",
+        "ui_icon": "UI Icon",
+        "ui_table": "UI Table",
+        "ui_table_manager": "UI Table Manager",
+        "ui_calendar": "UI Calendar",
+        "ui_dropdown": "UI Dropdown",
+        "ui_card": "UI Card",
+        "ui_paginator": "UI Paginator",
+        "ui_search": "UI Search",
+        "ui_accordion": "UI Accordion",
+        "ui_popup": "UI Popup",
+        "ui_side_panel": "UI Side Panel",
+        "ui_notification": "UI Notification"
+    },
+    "tokens": {
+        "title": "Tokens de Diseño",
+        "description": "Los tokens de diseño son los átomos visuales del sistema de diseño; específicamente, son entidades con nombre que almacenan atributos de diseño visual.",
+        "table": {
+            "name": "Nombre del Token",
+            "value": "Valor",
+            "category": "Categoría",
+            "description": "Descripción"
+        },
+        "groups": {
+            "general": "General",
+            "forms": "Formularios",
+            "themes": "Temas",
+            "buttons": "Botones",
+            "table": "Tablas"
+        }
+    },
+    "props_table": {
+        "tabs": {
+            "props": "Propiedades",
+            "events": "Eventos",
+            "slots": "Slots",
+            "methods": "Métodos"
+        },
+        "headers": {
+            "name": "Nombre",
+            "description": "Descripción",
+            "control": "Control",
+            "payload": "Payload",
+            "example": "Ejemplo",
+            "interface": "Interfaz",
+            "type": "Tipo",
+            "default": "Por defecto"
+        }
+    },
+    "ui_input": {
+        "props": {
+            "type": "Tipo de entrada nativo que define el teclado, la validación y la semántica",
+            "autocomplete": "Controla las sugerencias de autocompletado del navegador para el campo",
+            "min": "Valor numérico mínimo permitido cuando el tipo es número",
+            "max": "Valor numérico máximo permitido cuando el tipo es número",
+            "step": "Paso de incremento utilizado para los controles de entrada numérica",
+            "pattern": "Expresión regular utilizada para validar el valor del campo"
+        },
+        "sections": {
+            "errors": {
+                "label": "Errores y Validadores",
+                "props": {
+                    "validators": "Funciones de validación personalizadas para comprobar el formato del valor",
+                    "validationMessages": "Mensajes de error personalizados para diferentes estados de validez",
+                    "externalError": "Mensaje de error externo que se puede establecer programáticamente"
+                }
+            },
+            "api": {
+                "label": "API",
+                "props": {
+                    "prefix": "Contenido mostrado al inicio del campo (iconos, texto, etc.)",
+                    "suffix": "Contenido mostrado al final del campo (iconos, botones, etc.)",
+                    "text-align": "Alineación del texto del valor del campo",
+                    "ui-control-padding": "Relleno interno del campo de entrada",
+                    "ui-control-border": "Color del borde del campo",
+                    "ui-control-border-focus": "Color del borde cuando el campo está enfocado",
+                    "ui-control-radius": "Radio del borde del campo",
+                    "ui-control-background": "Color de fondo del campo",
+                    "ui-control-bg-hover": "Color de fondo al pasar el ratón sobre el campo"
+                }
+            }
+        },
+        "events": {
+            "data": {
+                "inputChange": "Se emite en cada interacción de entrada del usuario (escritura)",
+                "valueChange": "Se emite cuando el valor de entrada se confirma o se actualiza programáticamente",
+                "inputBlur": "Se emite cuando el campo pierde el foco",
+                "validationChange": "Se emite después de que se completa la validación con el resultado"
+            }
+        }
+    },
+    "ui_button": {
+        "props": {
+            "label": "Contenido de texto mostrado dentro del botón",
+            "loading": "Muestra un indicador de carga y deshabilita la interacción"
+        },
+        "events": {
+            "buttonClick": "Se emite cuando se hace clic en el botón"
+        }
+    },
+    "ui_autocomplete": {
+        "props": {
+            "apiUrl": "Punto final utilizado para obtener sugerencias dinámicas",
+            "apiParams": "Parámetros adicionales enviados con cada solicitud de API",
+            "dropdownMaxItemsVisible": "Número máximo de opciones visibles antes de habilitar el desplazamiento vertical"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Se emite cuando cambia el valor de autocompletado",
+                "optionSelected": "Se emite cuando se selecciona una opción del menú desplegable"
+            }
+        }
+    },
+    "ui_select": {
+        "props": {},
+        "events": {
+            "data": {
+                "inputChange": "Se emite cuando cambia el valor seleccionado"
+            }
+        }
+    },
+    "ui_checkbox": {
+        "props": {
+            "text": "Texto que se muestra a la derecha de la casilla de verificación",
+            "checked": "Marca la casilla de verificación como seleccionada en el renderizado inicial",
+            "indeterminate": "Muestra la casilla de verificación en un estado visual indeterminado"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Se emite cuando cambia el estado de la casilla de verificación"
+            }
+        }
+    },
+    "ui_radiobutton": {
+        "props": {
+            "initialValue": "Valor inicial del campo",
+            "direction": "Dirección del diseño del grupo de radio"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Se emite cuando cambia la opción de radio seleccionada"
+            }
+        }
+    },
+    "ui_dropdown": {
+        "props": {
+            "mode": "Modo de selección del menú desplegable (single o multi)",
+            "showCheckbox": "Muestra una casilla de verificación para cada elemento de la lista",
+            "showSelectAll": "Habilita la opción 'Seleccionar todo' para el modo multi"
+        },
+        "events": {
+            "data": {
+                "valueChange": "Se emite cuando cambian los valores seleccionados",
+                "newItemClick": "Se emite cuando se hace clic en la opción 'Agregar nuevo elemento'"
+            }
+        }
+    },
+    "ui_search": {
+        "props": {},
+        "events": {
+            "data": {
+                "searchChange": "Se emite cuando cambia el valor de búsqueda",
+                "searchClear": "Se emite cuando se hace clic en el botón de borrar"
+            }
+        }
+    },
+    "ui_textarea": {
+        "props": {},
+        "events": {
+            "data": {
+                "inputChange": "Se emite cuando cambia el valor del área de texto",
+                "valueChange": "Se emite cuando se confirma el valor"
+            }
+        }
+    },
+    "ui_paginator": {
+        "props": {
+            "total": "El número total de elementos para paginar"
+        },
+        "events": {
+            "data": {
+                "pageChange": "Se emite cuando cambia la página"
+            }
+        }
+    },
+    "ui_calendar": {
+        "props": {},
+        "events": {
+            "data": {
+                "dateChange": "Se emite cuando cambian las fechas seleccionadas",
+                "dateClick": "Se emite cuando se hace clic en una fecha"
+            }
+        }
+    },
+    "ui_datepicker": {
+        "props": {
+            "dateType": "Define si el selector selecciona una sola fecha o un rango de fechas",
+            "textOptions": "Configuración de texto para etiquetas de rango y separador"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Se emite cuando cambian las fechas seleccionadas"
+            }
+        }
+    },
+    "ui_button_icon": {
+        "props": {
+            "icon": "Nombre o clase del icono utilizado para renderizar el icono dentro del botón"
+        },
+        "events": {
+            "buttonClick": "Se emite cuando se hace clic en el botón de icono"
+        }
+    },
+    "ui_button_dropdown": {
+        "props": {
+            "split": "Si es verdadero, renderiza un botón dividido (botón principal + botón de icono)"
+        },
+        "events": {
+            "data": {
+                "optionSelected": "Se emite cuando se selecciona una opción del menú desplegable",
+                "buttonClick": "Se emite cuando se hace clic en el botón principal (modo dividido)"
+            }
+        }
+    },
+    "ui_icon": {
+        "props": {
+            "icon": "Nombre del icono interno de DS. Si no se proporciona, el componente renderizará el SVG del slot"
+        }
+    },
+    "ui_table": {
+        "props": {
+            "headers": "Definiciones de columna para el encabezado de la tabla y mapeo de datos",
+            "data": "Matriz de objetos que se renderizarán como filas de la tabla"
+        },
+        "events": {
+            "data": {
+                "rowDoubleClick": "Se emite cuando se hace doble clic en una fila",
+                "sortChange": "Se emite cuando cambia el orden de clasificación"
+            }
+        }
+    },
+    "ui_table_manager": {
+        "props": {
+            "showPaginator": "Habilita o deshabilita la interfaz de usuario del paginador",
+            "gridToolbarItems": "Configuración declarativa de los controles de la barra de herramientas",
+            "pageSizeOptions": "Opciones disponibles para el selector de tamaño de página",
+            "editingKeys": "Identificadores de filas actualmente en modo edición",
+            "expandedKeys": "Identificadores de filas actualmente expandidas"
+        },
+        "events": {
+            "data": {
+                "toolbarButtonClick": "Se emite cuando se hace clic en un botón de la barra de herramientas",
+                "filterChange": "Se emite cuando se aplican filtros",
+                "sortChange": "Se emite cuando cambia el orden de clasificación"
+            }
+        }
+    },
+    "ui_card": {
+        "props": {
+            "cardOptions": "Opciones de contenido de la tarjeta como título, subtítulo, imagen, etc."
+        },
+        "events": {
+            "data": {
+                "primaryButtonClick": "Se emite cuando se hace clic en el botón primario",
+                "secondaryButtonClick": "Se emite cuando se hace clic en el botón secundario"
+            }
+        }
+    },
+    "ui_popup": {
+        "props": {
+            "show": "Controla si el popup se renderiza y es visible en el DOM",
+            "showBackdrop": "Alterna la superposición de fondo detrás de la superficie del popup",
+            "status": "Indicador de estado visual que se muestra antes del título del popup",
+            "popupProps": "Objeto de configuración para personalizar el contenido y las acciones del popup"
+        },
+        "events": {
+            "data": {
+                "backdropDismiss": "Se emite cuando se hace clic en el fondo",
+                "closeButtonClick": "Se emite cuando se hace clic en el botón de cerrar",
+                "footerButtonClick": "Se emite cuando se hace clic en un botón del pie de página"
+            }
+        }
+    },
+    "ui_side_panel": {
+        "props": {
+            "isOpen": "Si el panel lateral está abierto",
+            "panelTitle": "Título del panel",
+            "showCloseButton": "Si se debe mostrar el botón de cerrar",
+            "closeOnOverlayClick": "Si al hacer clic en la superposición se cierra el panel",
+            "closeOnEscKey": "Si al presionar ESC se cierra el panel"
+        },
+        "events": {
+            "data": {
+                "panelOpened": "Se emite cuando se abre el panel",
+                "panelClosed": "Se emite cuando se cierra el panel",
+                "panelCloseCancelled": "Se emite cuando se cancela el cierre del panel"
+            }
+        }
+    },
+    "ui_notification": {
+        "props": {
+            "notificationTitle": "Determina el título",
+            "text": "Determina el texto (opcional si se usa un slot)",
+            "type": "Habilita el tipo de notificación",
+            "timeout": "Determina el tiempo de espera (ms). 0 = no se cierra automáticamente"
+        },
+        "events": {
+            "data": {
+                "closed": "Se emite cuando se cierra la notificación"
+            }
+        }
+    }
+}

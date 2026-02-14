@@ -1,0 +1,378 @@
+{
+    "common": {
+        "search": "Search...",
+        "category": "Category",
+        "all_categories": "All Categories",
+        "showing": "Showing",
+        "of": "of",
+        "tokens": "tokens",
+        "in": "in",
+        "group": "group",
+        "language": "Language",
+        "no_results": "No results found",
+        "select_component": "Select a component"
+    },
+    "props": {
+        "common": {
+            "label": "Text label displayed above or beside the component",
+            "disabled": "Disables interaction and applies disabled styling",
+            "readonly": "Prevents editing while keeping the value visible and focusable",
+            "required": "Marks the field as mandatory for validation",
+            "placeholder": "Placeholder text shown when no value is entered",
+            "hint": "Helper text displayed beneath the component",
+            "emptyMessage": "Text displayed when no options or results are available",
+            "disableFloatingLabel": "Enables floating-label behavior when focused or filled",
+            "dropdownMaxItemsVisible": "Maximum number of options visible before scrolling",
+            "maxLength": "Maximum number of characters allowed",
+            "minLength": "Minimum number of characters required",
+            "color": "Visual color variant that defines theme emphasis",
+            "size": "Predefined size controlling dimensions and typography",
+            "stickyHeader": "Makes the table header sticky when scrolling vertically",
+            "currentPage": "The currently active page number",
+            "pageSize": "The number of items to display per page",
+            "position": "Controls the visual placement of the component on the screen",
+            "options": "Data source for selectable options or items",
+            "optionKeys": "Mapping configuration for custom option object fields (value, text, id)",
+            "validators": "Custom validation functions for domain-specific logic",
+            "validationMessages": "Custom error messages for different validity states",
+            "columnsToShow": "Keys defining which fields of each option should be shown",
+            "columnHeaders": "Headers for the displayed columns",
+            "templates": "Custom templates for cell, header, or row rendering",
+            "sort": "Configuration for the current sorting state",
+            "stickyColumns": "Number of columns to keep fixed during horizontal scroll"
+        }
+    },
+    "header": {
+        "title": "Design System UI Components"
+    },
+    "menu": {
+        "documentation": "Documentation",
+        "form_controls": "Form Controls",
+        "buttons": "Buttons",
+        "data_display": "Data Display",
+        "navigation": "Navigation",
+        "panels_accordions": "Panels & Accordions",
+        "overlays": "Overlays",
+        "tokens": "Tokens",
+        "ui_input": "UI Input",
+        "ui_autocomplete": "UI Autocomplete",
+        "ui_select": "UI Select",
+        "ui_datepicker": "UI Datepicker",
+        "ui_textarea": "UI Textarea",
+        "ui_checkbox": "UI Checkbox",
+        "ui_radiobutton": "UI Radiobutton",
+        "ui_button": "UI Button",
+        "ui_button_icon": "UI Button Icon",
+        "ui_button_dropdown": "UI Button Dropdown",
+        "ui_icon": "UI Icon",
+        "ui_table": "UI Table",
+        "ui_table_manager": "UI Table Manager",
+        "ui_calendar": "UI Calendar",
+        "ui_dropdown": "UI Dropdown",
+        "ui_card": "UI Card",
+        "ui_paginator": "UI Paginator",
+        "ui_search": "UI Search",
+        "ui_accordion": "UI Accordion",
+        "ui_popup": "UI Popup",
+        "ui_side_panel": "UI Side Panel",
+        "ui_notification": "UI Notification"
+    },
+    "tokens": {
+        "title": "Design Tokens",
+        "description": "Design tokens are the visual design atoms of the design system — specifically, they are named entities that store visual design attributes.",
+        "table": {
+            "name": "Token Name",
+            "value": "Value",
+            "category": "Category",
+            "description": "Description"
+        },
+        "groups": {
+            "general": "General",
+            "forms": "Forms",
+            "themes": "Themes",
+            "buttons": "Buttons",
+            "table": "Table"
+        }
+    },
+    "props_table": {
+        "tabs": {
+            "props": "Props",
+            "events": "Events",
+            "slots": "Slots",
+            "methods": "Methods"
+        },
+        "headers": {
+            "name": "Name",
+            "description": "Description",
+            "control": "Control",
+            "payload": "Payload",
+            "example": "Example",
+            "interface": "Interface",
+            "type": "Type",
+            "default": "Default"
+        }
+    },
+    "ui_input": {
+        "props": {
+            "type": "Native input type that defines keyboard, validation, and semantics",
+            "autocomplete": "Controls browser autocomplete suggestions for the input",
+            "min": "Minimum numeric value allowed when type is number",
+            "max": "Maximum numeric value allowed when type is number",
+            "step": "Increment step used for numeric input controls",
+            "pattern": "Regular expression used to validate the input value"
+        },
+        "sections": {
+            "errors": {
+                "label": "Errors & Validators",
+                "props": {
+                    "validators": "Custom validation functions to check value format",
+                    "validationMessages": "Custom error messages for different validity states",
+                    "externalError": "External error message that can be set programmatically"
+                }
+            },
+            "api": {
+                "label": "API",
+                "props": {
+                    "prefix": "Content displayed at the start of the input (icons, text, etc.)",
+                    "suffix": "Content displayed at the end of the input (icons, buttons, etc.)",
+                    "text-align": "Text alignment of the input value",
+                    "ui-control-padding": "Internal padding of the input field",
+                    "ui-control-border": "Border color of the input",
+                    "ui-control-border-focus": "Border color when input is focused",
+                    "ui-control-radius": "Border radius of the input",
+                    "ui-control-background": "Background color of the input",
+                    "ui-control-bg-hover": "Background color when hovering over the input"
+                }
+            }
+        },
+        "events": {
+            "data": {
+                "inputChange": "Emitted on every user input interaction (typing)",
+                "valueChange": "Emitted when the input value is committed or programmatically updated",
+                "inputBlur": "Emitted when the input loses focus",
+                "validationChange": "Emitted after validation completes with the result"
+            }
+        }
+    },
+    "ui_button": {
+        "props": {
+            "label": "Text content displayed inside the button",
+            "loading": "Shows loading spinner and disables interaction"
+        },
+        "events": {
+            "buttonClick": "Emitted when the button is clicked"
+        }
+    },
+    "ui_autocomplete": {
+        "props": {
+            "apiUrl": "Endpoint used to fetch dynamic suggestions",
+            "apiParams": "Additional parameters sent with each API request",
+            "dropdownMaxItemsVisible": "Maximum number of options visible before enabling vertical scroll"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Emitted when the autocomplete value changes",
+                "optionSelected": "Emitted when an option is selected from the dropdown"
+            }
+        }
+    },
+    "ui_select": {
+        "props": {},
+        "events": {
+            "data": {
+                "inputChange": "Emitted when the selected value changes"
+            }
+        }
+    },
+    "ui_checkbox": {
+        "props": {
+            "text": "Text displayed to the right of the checkbox",
+            "checked": "Marks the checkbox as checked on initial render",
+            "indeterminate": "Shows the checkbox in an indeterminate visual state"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Emitted when the checkbox state changes"
+            }
+        }
+    },
+    "ui_radiobutton": {
+        "props": {
+            "initialValue": "Initial value of the input",
+            "direction": "Layout direction of the radio group"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Emitted when the selected radio option changes"
+            }
+        }
+    },
+    "ui_dropdown": {
+        "props": {
+            "mode": "Dropdown select mode (single or multi)",
+            "showCheckbox": "Show a checkbox for each item in the list",
+            "showSelectAll": "Enable the 'Select all' option for multi-mode"
+        },
+        "events": {
+            "data": {
+                "valueChange": "Emitted when the selected value(s) change",
+                "newItemClick": "Emitted when the 'Add new item' option is clicked"
+            }
+        }
+    },
+    "ui_search": {
+        "props": {},
+        "events": {
+            "data": {
+                "searchChange": "Emitted when the search value changes",
+                "searchClear": "Emitted when the clear button is clicked"
+            }
+        }
+    },
+    "ui_textarea": {
+        "props": {},
+        "events": {
+            "data": {
+                "inputChange": "Emitted when the textarea value changes",
+                "valueChange": "Emitted when the value is committed"
+            }
+        }
+    },
+    "ui_paginator": {
+        "props": {
+            "total": "The total number of items to paginate"
+        },
+        "events": {
+            "data": {
+                "pageChange": "Emitted when the page changes"
+            }
+        }
+    },
+    "ui_calendar": {
+        "props": {},
+        "events": {
+            "data": {
+                "dateChange": "Emitted when the selected date(s) change",
+                "dateClick": "Emitted when a date is clicked"
+            }
+        }
+    },
+    "ui_datepicker": {
+        "props": {
+            "dateType": "Defines whether the picker selects a single date or a date range",
+            "textOptions": "Text configuration for range mode labels and separator"
+        },
+        "events": {
+            "data": {
+                "inputChange": "Emitted when the selected date(s) change"
+            }
+        }
+    },
+    "ui_button_icon": {
+        "props": {
+            "icon": "Icon name or class used to render the icon inside the button"
+        },
+        "events": {
+            "buttonClick": "Emitted when the icon button is clicked"
+        }
+    },
+    "ui_button_dropdown": {
+        "props": {
+            "split": "If true, renders split button (main button + icon button)"
+        },
+        "events": {
+            "data": {
+                "optionSelected": "Emitted when an option is selected from the dropdown",
+                "buttonClick": "Emitted when the main button is clicked (split mode)"
+            }
+        }
+    },
+    "ui_icon": {
+        "props": {
+            "icon": "Internal DS icon name. If not provided, the component will render the slotted SVG"
+        }
+    },
+    "ui_table": {
+        "props": {
+            "headers": "Column definitions for the table header and data mapping",
+            "data": "Array of objects to be rendered as table rows"
+        },
+        "events": {
+            "data": {
+                "rowDoubleClick": "Emitted when a row is double-clicked",
+                "sortChange": "Emitted when the sort order changes"
+            }
+        }
+    },
+    "ui_table_manager": {
+        "props": {
+            "showPaginator": "Enables or disables the paginator UI",
+            "gridToolbarItems": "Declarative configuration of toolbar controls",
+            "pageSizeOptions": "Available options for the page size selector",
+            "editingKeys": "Identifiers of rows currently in edit mode",
+            "expandedKeys": "Identifiers of rows currently expanded"
+        },
+        "events": {
+            "data": {
+                "toolbarButtonClick": "Emitted when a toolbar button is clicked",
+                "filterChange": "Emitted when filters are applied",
+                "sortChange": "Emitted when the sort order changes"
+            }
+        }
+    },
+    "ui_card": {
+        "props": {
+            "cardOptions": "Card content options like title, subtitle, image, etc."
+        },
+        "events": {
+            "data": {
+                "primaryButtonClick": "Emitted when the primary button is clicked",
+                "secondaryButtonClick": "Emitted when the secondary button is clicked"
+            }
+        }
+    },
+    "ui_popup": {
+        "props": {
+            "show": "Controls whether the popup is rendered and visible in the DOM",
+            "showBackdrop": "Toggles the backdrop overlay behind the popup surface",
+            "status": "Visual status indicator displayed before the popup title",
+            "popupProps": "Configuration object for customizing popup content and actions"
+        },
+        "events": {
+            "data": {
+                "backdropDismiss": "Emitted when the backdrop is clicked",
+                "closeButtonClick": "Emitted when the close button is clicked",
+                "footerButtonClick": "Emitted when a footer button is clicked"
+            }
+        }
+    },
+    "ui_side_panel": {
+        "props": {
+            "isOpen": "Whether the side panel is open",
+            "panelTitle": "Panel title",
+            "showCloseButton": "Whether to show close button",
+            "closeOnOverlayClick": "Whether clicking overlay closes the panel",
+            "closeOnEscKey": "Whether pressing ESC closes the panel"
+        },
+        "events": {
+            "data": {
+                "panelOpened": "Emitted when the panel is opened",
+                "panelClosed": "Emitted when the panel is closed",
+                "panelCloseCancelled": "Emitted when panel close is cancelled"
+            }
+        }
+    },
+    "ui_notification": {
+        "props": {
+            "notificationTitle": "Determines the title",
+            "text": "Determines the text (optional if using a slot)",
+            "type": "Enables the notification type",
+            "timeout": "Determines the timeout (ms). 0 = does not close automatically"
+        },
+        "events": {
+            "data": {
+                "closed": "Emitted when the notification is closed"
+            }
+        }
+    }
+}
