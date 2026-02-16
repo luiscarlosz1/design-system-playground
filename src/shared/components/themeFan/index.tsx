@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { themes } from './Themes';
-import './ThemeFan.scss';
+import './index.scss';
+import { themes } from '../../Themes';
 
 export default function ThemeFan() {
     const [currentThemeId, setCurrentThemeId] = useState(() => {
