@@ -85,7 +85,7 @@
     },
     "tokens": {
         "title": "Tokens de Diseño",
-        "description": "Los tokens de diseño son los átomos visuales del sistema de diseño; específicamente, son entidades con nombre que almacenan atributos de diseño visual.",
+        "description": "Los tokens son los valores configurables del tema del Design System. Permiten ajustar la apariencia del sistema cuando se requiere personalización, sin alterar el comportamiento de los componentes.",
         "table": {
             "name": "Nombre del Token",
             "value": "Valor",
