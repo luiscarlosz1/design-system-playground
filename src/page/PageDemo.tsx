@@ -31,7 +31,11 @@ export default function PageDemo() {
         <SideMenu onSelect={setSelected} />
         <main style={{ flex: 1, padding: '2rem', overflow: 'auto', minHeight: 0 }}>
           <h2>{getTranslatedTitle(selected)}</h2>
-          {DemoComponent ? <DemoComponent /> : (
+          {DemoComponent ? (
+            <div style={{ display: 'grid', gap: '15px' }}>
+              <DemoComponent />
+            </div>
+          ) : (
             <div style={{
               display: 'flex',
               alignItems: 'center',
