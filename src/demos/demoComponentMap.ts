@@ -21,7 +21,7 @@ import UiAccordionComponent from './UiAccordion';
 import UiPopupComponent from './UiPopup';
 import UiSidePanelComponent from './UiSidePanel';
 import UiNotificationComponent from './UiNotification';
-import TokensComponent from '../components/Tokens';
+import TokensComponent from '../components/tokens';
 
 export const demoComponentMap: Record<string, React.FC> = {
     'Tokens': TokensComponent,

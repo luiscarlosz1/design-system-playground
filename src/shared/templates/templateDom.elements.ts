@@ -28,6 +28,51 @@ export function createSpan(text: string): HTMLSpanElement {
 }
 
 /**
+ * Creates a monospace span (for prop names, code, etc.).
+ */
+export function createMonoSpan(text: string, color = '#007ECC'): HTMLSpanElement {
+  const span = document.createElement('span');
+  span.textContent = text;
+  span.style.fontFamily = 'monospace';
+  span.style.fontSize = '0.875rem';
+  span.style.color = color;
+  return span;
+}
+
+/**
+ * Creates a badge element.
+ */
+export function createBadge(text: string): HTMLSpanElement {
+  const badge = document.createElement('span');
+  badge.style.display = 'inline-flex';
+  badge.style.alignItems = 'center';
+  badge.style.justifyContent = 'center';
+  badge.style.width = '20px';
+  badge.style.height = '20px';
+  badge.style.borderRadius = '50%';
+  badge.style.backgroundColor = '#333';
+  badge.style.color = '#fff';
+  badge.style.fontSize = '11px';
+  badge.style.fontWeight = 'bold';
+  badge.textContent = text;
+  return badge;
+}
+
+/**
+ * Creates a flex container with badges.
+ */
+export function createBadgeList(value: string): HTMLElement | string {
+  if (!value || value === '-') return '-';
+  const container = document.createElement('div');
+  container.style.display = 'flex';
+  container.style.gap = '4px';
+  value.split(',').map(s => s.trim()).forEach(id => {
+    container.appendChild(createBadge(id));
+  });
+  return container;
+}
+
+/**
  * Creates a ui-input element.
  */
 export function createUiInput(
